@@ -1,0 +1,1 @@
+Get-VM | Where-Object { ($PSItem | Get-NetworkAdapter | where {$_.networkname -match "Example-Portgroup"})}
